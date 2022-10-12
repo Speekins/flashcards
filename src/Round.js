@@ -19,8 +19,8 @@ class Round {
     if (!this.turn.evaluateGuess()) {
       this.incorrectGuesses.push(this.currentCard.id);
     }
-    this.turn.giveFeedback();
     this.currentCard = this.deck.cards[this.turnsTaken];
+    return this.turn.giveFeedback();
   }
 
   calculatePercentCorrect() {
