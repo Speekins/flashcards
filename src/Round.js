@@ -1,8 +1,9 @@
 const Turn = require("./Turn");
+const Deck = require("./Deck");
 
 class Round {
-  constructor(deck) {
-    this.deck = deck;
+  constructor(cards) {
+    this.deck = new Deck(cards);
     this.currentCard = this.deck.cards[0];
     this.turn;
     this.turnsTaken = 0;
