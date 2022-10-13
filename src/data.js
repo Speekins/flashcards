@@ -1,5 +1,5 @@
 /* eslint-disable */
-const prototypeData = [{
+const jsQuiz = [{
   "id": 1,
   "question": "What allows you to define a set of related information using key-value pairs?",
   "answers": ["object", "array", "function"],
@@ -150,8 +150,37 @@ const prototypeData = [{
   "answers": ["prototype method", "object", "callback function"],
   "correctAnswer": "prototype method"
 }]
+
+const lotrTrivia = [{
+  "id": 1,
+  "question": "Who is Frodo's most trusted companion?",
+  "answers": ["Gollum", "Samwise Gamgee", "JRR Tolkien"],
+  "correctAnswer": "Samwise Gamgee"
+}, {
+  "id": 2,
+  "question": "How many rings of power were made in total (elves, dwarves, men, and the one)?",
+  "answers": ["15", "25", "20"],
+  "correctAnswer": "20"
+}, {
+  "id": 3,
+  "question": "Who is the author of Lord of the Rings?",
+  "answers": ["JRR Tolkien", "JK Rowling", "Stephen King"],
+  "correctAnswer": "JRR Tolkien"
+}, {
+  "id": 4,
+  "question": "What does Gandalf say to the Balrog?",
+  "answers": ["I like cake!", "Come on through, buddy!", "You shall not pass!"],
+  "correctAnswer": "You shall not pass!"
+}, {
+  "id": 5,
+  "question": "Where does Frodo hail from?",
+  "answers": ["Mordor", "The Shire", "Minas Tirith"],
+  "correctAnswer": "The Shire"
+}
+]
 /* eslint-enable */
 
 module.exports = {
-  prototypeData 
+  jsQuiz,
+  lotrTrivia 
 }

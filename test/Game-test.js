@@ -50,6 +50,7 @@ describe('Game', function() {
         answers: ['sea otter', 'pug', 'capybara'],
         correctAnswer: 'sea otter'
       },
+      startTime: Date.now(),
       turnsTaken: 0,
       incorrectGuesses: []
     };
@@ -58,7 +59,7 @@ describe('Game', function() {
   })
 
   it('should keep track of the current round', () => {
-
+    
     expect(game.round).to.eql(testRound);
   })
 

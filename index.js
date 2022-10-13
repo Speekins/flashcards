@@ -1,10 +1,24 @@
-// This is where your project starts.
-
-const { prototypeData } = require("./src/data");
+const readline = require('readline-sync');
+const data = require("./src/data");
 const Game = require("./src/Game");
-
-console.log('Your project is running...');
-
 var game = new Game();
 
-game.start(prototypeData);
+console.clear();
+
+var playerChoice = readline.question('Please choose a set of flashcards to study: Lord of the Rings or JavaScript.');
+
+while (true) {
+  if (playerChoice === 'lord of the rings' || playerChoice === 'javascript') {
+    console.clear();
+    break;
+  }
+  console.clear();
+  console.log("That is not a valid response.");
+  playerChoice = readline.question('Please choose a set of flashcards to study: Lord of the Rings or JavaScript.').toLowerCase();
+}
+
+if (playerChoice === 'lord of the rings') {
+  game.start(data.lotrTrivia)
+} else if (playerChoice === 'javascript') {
+  game.start(data.jsQuiz)
+}

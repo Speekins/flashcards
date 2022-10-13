@@ -1,7 +1,5 @@
 const Card = require('./Card');
-const data = require('./data');
 const Round = require('./Round');
-const prototypeQuestions = data.prototypeData;
 const util = require('./util');
 
 class Game {
@@ -12,6 +10,7 @@ class Game {
   start(data) {
     var cards = data.map(card => new Card(card));
     this.round = new Round(cards);
+    this.startTime = Date.now();
     this.printMessage(this.round.deck);
     this.printQuestion(this.round);
   }
@@ -23,6 +22,10 @@ class Game {
 
   printQuestion(round) {
       util.main(round);
+  }
+
+  calculateTotalTime() {
+    this.startTime
   }
 }
 

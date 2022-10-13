@@ -55,14 +55,14 @@ describe('Round', function () {
   })
 
   it('should be able to tell player percent of correct answers', () => {
-    round.turns = 10;
+    round.turnsTaken = 10;
     round.incorrectGuesses.push(1, 2, 3);
 
     expect(round.calculatePercentCorrect()).to.equal(70);
   })
 
   it('should be able to end the current round', () => {
-    round.turns = 10;
+    round.turnsTaken = 10;
     round.incorrectGuesses.push(1, 2, 3);
 
     expect(round.endRound()).to.equal('** Round over! ** You answered 70% of the questions correctly!');
