@@ -1,7 +1,5 @@
 const Card = require('./Card');
-const data = require('./data');
 const Round = require('./Round');
-const prototypeQuestions = data.prototypeData;
 const util = require('./util');
 
 class Game {
