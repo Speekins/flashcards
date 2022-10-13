@@ -48,7 +48,7 @@ node index.js
 
 When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
 
-[![FlashCards Video]([https://www.loom.com/share/7011ab8c41fc40b08154b309c063a097](https://user-images.githubusercontent.com/74210902/195666467-a836f934-5734-4e58-bdce-eeb49cc453ab.png))](https://loom.com/share/7011ab8c41fc40b08154b309c063a097)
+[![FlashCards Video](https://user-images.githubusercontent.com/74210902/195666467-a836f934-5734-4e58-bdce-eeb49cc453ab.png)](https://loom.com/share/7011ab8c41fc40b08154b309c063a097)
 
 ---
 
