@@ -4,8 +4,7 @@
 Make studying that much easier with this easy-to-use flashcards application. A user will be able to add any data set they want to study to this application, make an attempt at each, and take note of any cards they would like to revisit.
 
 ## Contributors
-Spencer Haka<br>
-github.com/speekins
+[!Spencer Haka](github.com/speekins)
 
 ## Example
 [![FlashCards Video](https://user-images.githubusercontent.com/74210902/195671107-2b83a58f-2355-4243-a36e-7bf1691ac482.png)](https://loom.com/share/7011ab8c41fc40b08154b309c063a097)
