@@ -19,8 +19,7 @@ const testDeck = [{
 
 describe('Round', function () {
   it('should take an array of cards (a deck) as an argument', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
 
     expect(round.deck.cards[0]).to.eql({
       id: 24,
@@ -31,22 +30,19 @@ describe('Round', function () {
   })
 
   it('should be assigned a card from the deck', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
 
     expect(round.currentCard).to.eql(testDeck[0]);
   })
 
   it('should have a method that returns the current card', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
 
     expect(round.returnCurrentCard()).to.eql(testDeck[0])
   })
 
   it('should have a method that updates the number of turns taken', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
 
     round.takeTurn('sea otter');
 
@@ -55,8 +51,7 @@ describe('Round', function () {
   })
 
   it('should be able to store id of cards guessed incorrectly', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
 
     round.takeTurn('pug');
 
@@ -64,8 +59,7 @@ describe('Round', function () {
   })
 
   it('should be able to tell player percent of correct answers', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
     round.turns = 10;
     round.incorrectGuesses.push(1, 2, 3);
     var percent = round.calculatePercentCorrect();
@@ -74,8 +68,7 @@ describe('Round', function () {
   })
 
   it('should be able to end the current round', () => {
-    var deck = new Deck(testDeck);
-    var round = new Round(deck);
+    var round = new Round(testDeck);
     round.turns = 10;
     round.incorrectGuesses.push(1, 2, 3);
     var endOfRound = round.endRound();
