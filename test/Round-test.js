@@ -47,7 +47,8 @@ describe('Round', function () {
   it('should have a method that updates the number of turns taken', () => {
     var deck = new Deck(testDeck);
     var round = new Round(deck);
-    round.takeTurn();
+
+    round.takeTurn('sea otter');
 
     expect(round.turnsTaken).to.equal(1);
     expect(round.turn.guess).to.be.a('string');
