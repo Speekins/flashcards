@@ -166,6 +166,16 @@ const lotrTrivia = [{
   "question": "Who is the author of Lord of the Rings?",
   "answers": ["JRR Tolkien", "JK Rowling", "Stephen King"],
   "correctAnswer": "JRR Tolkien"
+}, {
+  "id": 4,
+  "question": "What does Gandalf say to the Balrog?",
+  "answers": ["I like cake!", "Come on through, buddy!", "You shall not pass!"],
+  "correctAnswer": "You shall not pass!"
+}, {
+  "id": 5,
+  "question": "Where does Frodo hail from?",
+  "answers": ["Mordor", "The Shire", "Minas Tirith"],
+  "correctAnswer": "The Shire"
 }
 ]
 /* eslint-enable */
