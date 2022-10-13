@@ -1,7 +1,7 @@
 # Flashcards
 
 ## Description
-Make studying that much easier with this easy-to-use flashcards application. A user will be able to add any data set they want to study to this application, make an attempt at each, and take note of any cards they would like to revisit.
+Make studying that much easier with this easy-to-use flashcards application. A user will be able to add any data set they want to study to this application, make an attempt at each flashcard, and take note of any cards they would like to revisit.
 
 ## Contributors
 [Spencer Haka](github.com/speekins)
