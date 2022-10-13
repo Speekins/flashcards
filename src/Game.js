@@ -12,8 +12,7 @@ class Game {
 
   start(data) {
     var cards = data.map(card => new Card(card));
-    var deck = new Deck(cards);
-    this.round = new Round(deck);
+    this.round = new Round(cards);
     this.printMessage(this.round.deck);
     this.printQuestion(this.round);
   }
@@ -28,13 +27,4 @@ class Game {
   }
 }
 
-var newGame = new Game();
-
-newGame.start(prototypeQuestions);
-
 module.exports = Game;
-
-//Game will start with a new round by default
-//When the cards have run out, the round starts over
-// -a new group of cards is passed to a new deck (presumably the cards the player got incorrect)
-// -game.currentRound is reassigned to a new instance of round with the new deck passed to it
